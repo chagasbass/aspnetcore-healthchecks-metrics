@@ -12,11 +12,14 @@
     <PackageReference Include="AspNetCore.HealthChecks.UI" Version="5.0.1" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="5.0.1" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AspnetCore.Healthchecks.Data\AspnetCore.Healthchecks.Metrics.Data.csproj" />
     <ProjectReference Include="..\AspnetCore.Healthchecks.Domain\AspnetCore.Healthchecks.Metrics.Domain.csproj" />
+    <ProjectReference Include="..\AspnetCore.Healthchecks.Metrics.ApplicationServices\AspnetCore.Healthchecks.Metrics.ApplicationServices.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

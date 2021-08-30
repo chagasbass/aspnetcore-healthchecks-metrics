@@ -1,4 +1,5 @@
 ﻿using AspnetCore.Healthchecks.Metrics.Api.Metrics;
+using AspnetCore.Healthchecks.Metrics.ApplicationServices.Services;
 using AspnetCore.Healthchecks.Metrics.Data.DataContexts;
 using AspnetCore.Healthchecks.Metrics.Data.Repositories;
 using AspnetCore.Healthchecks.Metrics.Data.Services;
@@ -16,6 +17,7 @@ namespace AspnetCore.Healthchecks.Metrics.Api.Configurations
         {
             services.AddScoped<IAddressExternalService, AddressExternalService>();
             services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<IAddressAplicationService, AddressAplicationService>();
 
             services.AddSingleton<MetricReporter>();
 
