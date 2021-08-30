@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AspnetCore.Healthchecks.Data\AspnetCore.Healthchecks.Metrics.Data.csproj" />
     <ProjectReference Include="..\AspnetCore.Healthchecks.Domain\AspnetCore.Healthchecks.Metrics.Domain.csproj" />
+    <ProjectReference Include="..\AspnetCore.Healthchecks.Metrics.ApplicationServices\AspnetCore.Healthchecks.Metrics.ApplicationServices.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>

@@ -11,7 +11,17 @@ namespace AspnetCore.Healthchecks.Metrics.Domain.Entities
         public string City { get; set; }
         public string State { get; set; }
 
-        protected Address() { }
+        protected Address() { Id = Guid.NewGuid(); }
+
+        public Address(string cep, string street, string district, string city, string state)
+        {
+            Id = Guid.NewGuid();
+            CEP = cep;
+            Street = street;
+            District = district;
+            City = city;
+            State = state;
+        }
 
     }
 }

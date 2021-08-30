@@ -34,7 +34,7 @@ namespace AspnetCore.Healthchecks.Metrics.Api.Metrics
             {
                 sw.Stop();
                 reporter.RegisterRequest();
-                reporter.RegisterResponseTime(httpContext.Response.StatusCode, httpContext.Request.Method, sw.Elapsed);
+                reporter.RegisterResponseTime(httpContext.Response.StatusCode, httpContext.Request.Method, httpContext.Request.Path, sw.Elapsed);
             }
         }
     }
