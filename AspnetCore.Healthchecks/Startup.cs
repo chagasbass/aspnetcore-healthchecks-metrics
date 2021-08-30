@@ -25,6 +25,7 @@ namespace AspnetCore.Healthchecks.Metrics.Api
             services.AddDataBaseConfigurations(Configuration)
                     .AddOptionsPattern(Configuration)
                     .AddDIConfigurations()
+                    .AddAutomapperConfiguration()
                     .ConfigureHealthChecks();
 
             services.AddControllers();

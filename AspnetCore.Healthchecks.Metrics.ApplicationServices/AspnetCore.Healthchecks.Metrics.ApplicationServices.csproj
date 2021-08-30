@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AspnetCore.Healthchecks.Domain\AspnetCore.Healthchecks.Metrics.Domain.csproj" />
   </ItemGroup>
 
